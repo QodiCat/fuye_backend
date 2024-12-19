@@ -1,0 +1,481 @@
+.content-area {
+    display: flex;
+    gap: 20px;
+}
+
+.preview-panel{
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000;
+}
+
+.preview-panel .virols {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* 顶部对齐 */
+    background-color: transparent;
+    gap: 20px;
+}
+
+.avatar-options {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.option-button {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #dc2626;
+}
+
+.option-button:hover {
+    border-color: #dc2626;
+    color: #000;
+}
+
+.option-button.active {
+    background-color: #fff1f1;
+    border-color: #dc2626;
+    color: #dc2626;
+}
+
+.option-button.active svg {
+    stroke: #dc2626;
+}
+
+.preview-panel .tips{
+    border: none;
+    font-size: 14px;
+    color: #666;
+    background-color: #dcdddd;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 390px;
+}
+
+.preview-area {
+    flex: 1;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 360px;
+}
+
+.preview-screen {
+    flex: 1;
+    background: #fff;
+    border: 1px dashed #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 177.78%;
+    width: 100%;
+    min-height: unset;
+}
+
+.placeholder-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #666;
+    width: 100%;
+}
+
+.placeholder-content svg {
+    margin-bottom: 12px;
+    opacity: 0.5;
+}
+
+.placeholder-content p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.play-btn, .volume-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 4px;
+    color: #333;
+}
+
+.play-btn:hover, .volume-btn:hover {
+    background: #f0f0f0;
+}
+
+.progress-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    background: #e0e0e0;
+    border-radius: 2px;
+    outline: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #1a73e8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #666;
+}
+
+.script-panel {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.script-panel .script-btn{
+    border:none;
+    background-color: transparent;
+}
+.tabs {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.tab {
+    padding: 5px 0;
+    cursor: pointer;
+    color: #000;
+}
+
+.tab.active {
+    color: #dc2626;
+    border-bottom: 2px solid #dc2626;
+}
+
+.script-tools {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #dcdddd;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.script-tools span{
+    text-align: end;
+    margin-left: auto;
+    margin-right: 20px;
+    color: #666;
+}
+
+.script-panel .try-btn{
+    background-color: #dc2626;
+    border: none;
+    color: #fff;
+    margin-left: 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.script-input {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 0 0 8px 8px;
+    resize: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.prompt-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+.digital-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.generate-button {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.generate-button:hover {
+    background-color: #b91c1c;
+}
+
+/* 弹窗样式 */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.2s ease-out;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.close-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 数字人弹窗特定样式 */
+.digital-modal {
+    max-width: 1000px;
+}
+
+.digital-modal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.digital-tabs {
+    display: flex;
+    gap: 24px;
+}
+
+.digital-tab {
+    cursor: pointer;
+    padding: 8px 0;
+    color: #666;
+    position: relative;
+}
+
+.digital-tab.active {
+    color: #dc2626;
+}
+
+.digital-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #dc2626;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 24px;
+    width: 240px;
+}
+
+.search-box select {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.search-box svg {
+    color: #666;
+}
+
+.digital-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.digital-upload-card {
+    aspect-ratio: 1;
+    border: 2px dashed #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 150px;
+    width: 230px;
+    border-color: #dc2626;
+    color: #dc2626;
+}
+
+.upload-icon {
+    margin-bottom: 12px;
+}
+
+.digital-card {
+    aspect-ratio: 1;
+    border-radius: 12px;
+    height: 150px;
+    width: 230px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(to bottom, #efefef, #959595);
+}
+
+.digital-preview {
+    width: 100%;
+    height: 60%;
+    
+}
+
+.digital-info {
+    height: 40%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    bottom: -20px;
+
+}
+
+.digital-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.digital-card.selected {
+    border: 2px solid #dc2626;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

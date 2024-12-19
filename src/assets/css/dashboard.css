@@ -1,0 +1,174 @@
+
+.dashboard-body {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    
+    min-height: 100vh;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 31px 73px;
+    width: 15%;
+    background-color: #000;
+}
+
+.sidebar .logo img{
+    width: 221px;
+}
+
+/* 侧边栏菜单样式 */
+.sidebar .menu {
+    flex: 1;
+    margin-top: 86px;
+    margin-bottom: 123px;
+}
+
+.sidebar .menu ul {
+    list-style: none;
+    padding-left: 21px;
+}
+
+.sidebar ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 68px;
+}
+
+/* 梯形箭头样式 */
+.sidebar ul li::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    right: -58px;
+    width: 0;
+    height: 85px;
+    border-top: 15px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 28px solid #000;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu li:hover::after,
+.menu li.active::after {
+  opacity: 1;
+}
+
+.menu li .arrow-icon {
+    position: absolute;
+    top: 32px; /* 垂直居中 */
+    right: -64px; /* 调整位置以确保在梯形中心 */
+    transform: translateY(-50%) scaleX(-1);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+
+.menu li:hover .arrow-icon,
+.menu li.active .arrow-icon {
+    opacity: 1;
+}
+
+.sidebar ul li i {
+    margin-right: 12px;
+    font-size: 24px;
+}
+
+.sidebar ul li span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* consult 样式 */
+.sidebar .consult {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 13px;
+
+    width: 210px;
+    height: 67px;
+    background-color: #555657;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.sidebar .consult img {
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+    height: 100px;
+}
+
+.sidebar .consult span {
+    margin-right: 31px;
+    font-size: 22px;
+}
+
+/* 主区域样式 */
+.main-content {
+    flex: 1;
+    padding: 49px 103px 0;
+    background-color: #3E3A39;
+}
+
+/* header 样式 */
+.main-content .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.main-content .header .points {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+    padding: 8px 17px 6px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-content .header .points .iconfont {
+    margin-right: 15px;
+    padding-right: 15px;
+    height: 24px;
+
+    border-right: 1px solid #fff;
+    font-size: 34px;
+    line-height: 24px;
+}
+
+.main-content .header .points span {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.main-content .header .points span i {
+    font-style: normal;
+    color: #C0272F;
+}
+
+.main-content .header .user {
+    font-size: 44px;
+    line-height: 48px;
+    cursor: pointer;
+}

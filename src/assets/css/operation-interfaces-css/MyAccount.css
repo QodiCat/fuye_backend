@@ -1,0 +1,137 @@
+.my-account {
+    padding: 80px 20px 20px;
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    margin: 100px 0;
+    max-width: 60vw;
+}
+.account-info {
+
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.user-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 12px;
+}
+.user-details .validity{
+    margin-left: auto;
+    background-color: #dddddd;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+}
+.user-details .residue{
+    margin-left: 0;
+    background-color: #dddddd;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 1px solid #e5e7eb;
+    padding-left: 20px;
+}
+
+.referral-header {
+    background-color: #dc2626;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 20px;
+}
+.referral-header .credits{
+    background-color: transparent;
+    width: 50%;
+}
+.referral-header .invitation{
+    background-color: #da6771;
+    width: 300px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 12px;
+    height: 150px;
+}
+.referral-input {
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    justify-content: baseline;
+}
+.referral-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #efefef;
+    color: #000;
+}
+.referral-input p{
+    color: #666;
+    margin-top: 5px;
+}
+.referral-input button {
+    background-color: #059dfd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pricing-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.pricing-card {
+    background-color: #cd2e33;
+    padding: 20px 0 0 0;
+    border-radius: 30px;
+    flex: 1;
+}
+.pricing-card .buy {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 40px;
+}
+.pricing-card .buy button {
+    background-color: #d9656f;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+.pricing-card .pricing-inner {
+    background-color: #efefef;
+    border-radius: 30px;
+    color: #000;
+    margin:0;
+    height: 150px;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+.pricing-card h3 {
+    margin-top: 0;
+}
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+.pricing-card li::before {
+    content: "✓ ";
+    color: #000;
+}
+.terms {
+    margin-top: 20px;
+    color: #000;
+}

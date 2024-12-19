@@ -1,0 +1,93 @@
+{
+  "id": "4770496",
+  "name": "digital-human",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7335473",
+      "name": "向右箭头",
+      "font_class": "xiangyoujiantou",
+      "unicode": "eb21",
+      "unicode_decimal": 60193
+    },
+    {
+      "icon_id": "5387846",
+      "name": "钻石_o",
+      "font_class": "zuanshi_o",
+      "unicode": "eb70",
+      "unicode_decimal": 60272
+    },
+    {
+      "icon_id": "14434873",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "12025963",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e7a7",
+      "unicode_decimal": 59303
+    },
+    {
+      "icon_id": "431745",
+      "name": "film",
+      "font_class": "film",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "1727442",
+      "name": "213麦克风",
+      "font_class": "maikefeng",
+      "unicode": "e8c2",
+      "unicode_decimal": 59586
+    },
+    {
+      "icon_id": "6773166",
+      "name": "文件-记录表",
+      "font_class": "wj-jlb",
+      "unicode": "e75d",
+      "unicode_decimal": 59229
+    },
+    {
+      "icon_id": "12290473",
+      "name": "成员1",
+      "font_class": "chengyuan",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "42227479",
+      "name": "account-box-fill",
+      "font_class": "account-box-fill",
+      "unicode": "e79e",
+      "unicode_decimal": 59294
+    },
+    {
+      "icon_id": "1435248",
+      "name": "验证码",
+      "font_class": "yanzhengma",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "8765147",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "1368603",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}
